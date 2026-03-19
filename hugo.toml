@@ -1,33 +1,53 @@
 baseURL = 'https://your-domain.com/'
 languageCode = 'zh-cn'
 title = '我的知识库'
-theme = 'hugo-theme-docdock'
+theme = 'relearn'
 
 [params]
   description = "个人知识库"
   editURL = "https://github.com/kyeo-hub/my_wiki/edit/main/content"
-  showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
-  themeVariant = "blue"
   disableSearch = false
-  disableHistory = true
+  disableLandingPageButton = false
+  alwaysShowEditLink = true
+  showVisitedLinks = true
+  themeVariant = "zen-light"
   disableNavChevron = false
+  disableExplicitIndexURLs = false
+  mermaidInitialize = "{ \"theme\": \"default\" }"
 
-  [params.author]
-    name = "kyeo"
-    email = "your-email@example.com"
+[params.author]
+  name = "kyeo"
+  email = "your-email@example.com"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON" ]
+  page = [ "HTML", "RSS" ]
+  section = [ "HTML", "RSS", "print" ]
 
-# 多语言配置（可选）
+# 多语言配置
 [languages]
   [languages.zh]
     title = "我的知识库"
     weight = 1
     languageName = "中文"
+    languageDirection = "ltr"
   [languages.en]
     title = "My Wiki"
     weight = 2
     languageName = "English"
+    languageDirection = "ltr"
+
+# 菜单配置
+[[menu.shortcuts]]
+  name = "<i class='fab fa-github'></i> GitHub 仓库"
+  identifier = "ds"
+  url = "https://github.com/kyeo-hub/my_wiki"
+  weight = 10
+
+[[menu.shortcuts]]
+  name = "<i class='fas fa-bookmark'></i> Hugo 文档"
+  identifier = "dh"
+  url = "https://gohugo.io/documentation/"
+  weight = 20
