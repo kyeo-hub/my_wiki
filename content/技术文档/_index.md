@@ -1,8 +1,7 @@
-+++
-title = "技术文档"
-chapter = true
-weight = 20
-+++
+---
+title: "技术文档"
+weight: 20
+---
 
 # 技术文档
 

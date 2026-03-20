@@ -1,7 +1,7 @@
-+++
-title = "关于 Hugo"
-weight = 1
-+++
+---
+title: "关于 Hugo"
+weight: 1
+---
 
 # 关于 Hugo
 

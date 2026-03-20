@@ -1,0 +1,57 @@
+theme: docura
+enableGitInfo: true
+defaultContentLanguage: zh
+
+languages:
+  zh:
+    weight: 1
+    languageName: 中文
+    languageCode: zh-cn
+    contentDir: content
+    title: 我的知识库
+    params:
+      description: 个人知识库
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  author:
+    name: kyeo
+    url: https://github.com/kyeo-hub
+  themeColors:
+    light: '#ffffff'
+    dark: '#121212'
+  years:
+    start: '2024'
+    present: 2026
+  social:
+    github: kyeo-hub
+  repository: 'kyeo-hub/my_wiki'
+  editURL: 'https://github.com/kyeo-hub/my_wiki/edit/main/content'
+  disableSearch: false
+  disableNextPrev: false
+  showVisitedLinks: true
+
+menu:
+  main:
+    - url: /
+      name: 首页
+      identifier: home
+      weight: 1
+    - url: /入门指南/
+      name: 入门指南
+      identifier: getting-started
+      weight: 2
+    - url: /技术文档/
+      name: 技术文档
+      identifier: docs
+      weight: 3
+    - url: /项目笔记/
+      name: 项目笔记
+      identifier: projects
+      weight: 4

@@ -1,7 +1,7 @@
-+++
-title = "Markdown 语法"
-weight = 2
-+++
+---
+title: "Markdown 语法"
+weight: 2
+---
 
 # Markdown 语法
 
@@ -56,23 +56,3 @@ def hello():
 ## 引用
 
 > 这是一段引用文本
-
-## 提示框
-
-Docdock 主题支持提示框：
-
-{{% notice note %}}
-这是一个注释框
-{{% /notice %}}
-
-{{% notice tip %}}
-这是一个提示框
-{{% /notice %}}
-
-{{% notice info %}}
-这是一个信息框
-{{% /notice %}}
-
-{{% notice warning %}}
-这是一个警告框
-{{% /notice %}}

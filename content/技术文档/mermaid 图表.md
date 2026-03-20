@@ -1,11 +1,11 @@
-+++
-title = "Mermaid 图表"
-weight = 1
-+++
+---
+title: "Mermaid 图表"
+weight: 1
+---
 
 # Mermaid 图表
 
-Docdock 主题支持 Mermaid 图表语法。
+Docura 主题支持 Mermaid 图表语法。
 
 ## 流程图
 
@@ -25,7 +25,7 @@ sequenceDiagram
     participant 用户
     participant 系统
     participant 数据库
-    
+
     用户->>系统：请求数据
     系统->>数据库：查询
     数据库-->>系统：返回数据

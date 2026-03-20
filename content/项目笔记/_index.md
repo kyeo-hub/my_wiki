@@ -1,8 +1,7 @@
-+++
-title = "项目笔记"
-chapter = true
-weight = 30
-+++
+---
+title: "项目笔记"
+weight: 30
+---
 
 # 项目笔记
 

@@ -1,8 +1,7 @@
-+++
-title = "入门指南"
-chapter = true
-weight = 10
-+++
+---
+title: "入门指南"
+weight: 10
+---
 
 # 入门指南
 
