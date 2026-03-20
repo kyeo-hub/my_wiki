@@ -2,6 +2,10 @@
 /public
 /resources
 
+# Deploy keys (sensitive)
+.github/deploy_key
+.github/deploy_key.pub
+
 # OS
 .DS_Store
 Thumbs.db
