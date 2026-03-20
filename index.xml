@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on 我的知识库</title><link>/</link><description>Recent content in 首页 on 我的知识库</description><generator>Hugo</generator><language>zh-cn</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Mermaid 图表</title><link>/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/mermaid-%E5%9B%BE%E8%A1%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/mermaid-%E5%9B%BE%E8%A1%A8/</guid><description>&lt;h1 id="mermaid-图表"&gt;Mermaid 图表&lt;/h1&gt;
+&lt;p&gt;Docura 主题支持 Mermaid 图表语法。&lt;/p&gt;
+&lt;h2 id="流程图"&gt;流程图&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;graph TD
+ A[开始] --&amp;gt; B{条件}
+ B --&amp;gt;|是 | C[执行 A]
+ B --&amp;gt;|否 | D[执行 B]
+ C --&amp;gt; E[结束]
+ D --&amp;gt; E
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="序列图"&gt;序列图&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;sequenceDiagram
+ participant 用户
+ participant 系统
+ participant 数据库
+
+ 用户-&amp;gt;&amp;gt;系统：请求数据
+ 系统-&amp;gt;&amp;gt;数据库：查询
+ 数据库--&amp;gt;&amp;gt;系统：返回数据
+ 系统--&amp;gt;&amp;gt;用户：显示结果
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="甘特图"&gt;甘特图&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;gantt
+ title 项目计划
+ dateFormat YYYY-MM-DD
+ section 阶段 1
+ 需求分析 :a1, 2024-01-01, 14d
+ section 阶段 2
+ 设计 :after a1, 10d
+ 开发 :20d
+ section 阶段 3
+ 测试 :15d
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="类图"&gt;类图&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;classDiagram
+ class Animal {
+ +String name
+ +eat()
+ }
+ class Dog {
+ +bark()
+ }
+ class Cat {
+ +meow()
+ }
+ Animal &amp;lt;|-- Dog
+ Animal &amp;lt;|-- Cat
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>关于 Hugo</title><link>/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/%E5%85%B3%E4%BA%8E-hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/%E5%85%B3%E4%BA%8E-hugo/</guid><description>&lt;h1 id="关于-hugo"&gt;关于 Hugo&lt;/h1&gt;
+&lt;p&gt;Hugo 是一个快速的静态网站生成器，使用 Go 语言编写。&lt;/p&gt;
+&lt;h2 id="特点"&gt;特点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;快速&lt;/strong&gt;：构建速度极快，通常只需几毫秒到几秒&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;灵活&lt;/strong&gt;：支持多种内容类型和自定义布局&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;强大&lt;/strong&gt;：内置短代码、多语言支持等功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装"&gt;安装&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Ubuntu/Debian&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt-get install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Windows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;choco install hugo -confirm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="基本命令"&gt;基本命令&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 创建新站点&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new site mysite
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 启动开发服务器&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 构建生产版本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Markdown 语法</title><link>/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/markdown-%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/markdown-%E8%AF%AD%E6%B3%95/</guid><description>&lt;h1 id="markdown-语法"&gt;Markdown 语法&lt;/h1&gt;
+&lt;p&gt;本文档使用 Markdown 语法编写。&lt;/p&gt;
+&lt;h2 id="标题"&gt;标题&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="gh"&gt;# 一级标题
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="gu"&gt;## 二级标题
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="gu"&gt;### 三级标题
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="文本格式"&gt;文本格式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;粗体&lt;/strong&gt;：&lt;code&gt;**文本**&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;斜体&lt;/em&gt;：&lt;code&gt;*文本*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;删除线&lt;/del&gt;：&lt;code&gt;~~文本~~&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;行内代码&lt;/code&gt;：&lt;code&gt;`代码`&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="代码块"&gt;代码块&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="列表"&gt;列表&lt;/h2&gt;
+&lt;h3 id="无序列表"&gt;无序列表&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;项目 1&lt;/li&gt;
+&lt;li&gt;项目 2&lt;/li&gt;
+&lt;li&gt;项目 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="有序列表"&gt;有序列表&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;第一步&lt;/li&gt;
+&lt;li&gt;第二步&lt;/li&gt;
+&lt;li&gt;第三步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="链接和图片"&gt;链接和图片&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;链接：&lt;code&gt;[文本](URL)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;图片：&lt;code&gt;![描述](URL)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="表格"&gt;表格&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;列 1&lt;/th&gt;
+ &lt;th&gt;列 2&lt;/th&gt;
+ &lt;th&gt;列 3&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;A&lt;/td&gt;
+ &lt;td&gt;B&lt;/td&gt;
+ &lt;td&gt;C&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;D&lt;/td&gt;
+ &lt;td&gt;E&lt;/td&gt;
+ &lt;td&gt;F&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="引用"&gt;引用&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是一段引用文本&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>

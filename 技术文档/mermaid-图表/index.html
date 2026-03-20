@@ -1,0 +1,44 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="个人知识库"><meta name=author content="kyeo"><title>Mermaid 图表 · 我的知识库</title><link rel=canonical href=/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/mermaid-%E5%9B%BE%E8%A1%A8/><link rel=stylesheet href=/assets/css/docs.min.c79fa7e9ed960154dbc4281e06351f27da62cc0cb1d7a927c7892938423971f1.css integrity><link rel=manifest href=/manifest.json><link rel=icon href=/img/icon/favicon.ico><link rel=icon href=/img/icon/icon-16.png sizes=16x16 type=image/png><link rel=icon href=/img/icon/icon-32.png sizes=32x32 type=image/png><link rel=apple-touch-icon href=/img/icon/icon-180.png sizes=180x180><meta name=theme-color content="#ffffff" media="(prefers-color-scheme: light)"><meta name=theme-color content="#121212" media="(prefers-color-scheme: dark)"></head><body><header id=site-header><div id=site-header-brand><a href=/>我的知识库</a></div><div id=site-header-controls><div class=dropdown><button class=dropdown-btn aria-haspopup=menu aria-label="theme selector">
+<i class="icon icon-brightness"></i>
+<i class="icon icon-select"></i></button><ul role=menu class=dropdown-menu><li role=menuitem><button class=color-scheme data-value=light><i class="icon icon-light-mode"></i> Light</button></li><li role=menuitem><button class=color-scheme data-value=dark><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li><li role=menuitem><button class=color-scheme data-value=night><i class="icon icon-night-mode"></i> Night</button></li></ul></div><div class=dropdown><button class=dropdown-btn aria-haspopup=menu aria-label="language selector">
+<i class="icon icon-translate"></i>
+<i class="icon icon-select"></i></button><ul role=menu class=dropdown-menu><li role=menuitem><a href=#>中文</a></li></ul></div></div><div id=site-header-menu><nav><ul><li><a href=/>首页</a></li><li><a href=/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/>入门指南</a></li><li><a href=/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/ class=active>技术文档</a></li><li><a href=/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/>项目笔记</a></li></ul></nav></div><div id=site-header-search></div></header><div id=site-main-content-wrapper><main><article id=article><nav id=article-nav><button id=article-nav-menu-btn><i class="icon icon-menu"></i> On this section</button>
+<button id=article-nav-toc-btn><i class="icon icon-toc"></i> On this page</button></nav><header id=article-header><h1>Mermaid 图表</h1></header><div id=article-content><h1 id=mermaid-图表>Mermaid 图表</h1><p>Docura 主题支持 Mermaid 图表语法。</p><h2 id=流程图>流程图</h2><pre tabindex=0><code class=language-mermaid data-lang=mermaid>graph TD
+    A[开始] --&gt; B{条件}
+    B --&gt;|是 | C[执行 A]
+    B --&gt;|否 | D[执行 B]
+    C --&gt; E[结束]
+    D --&gt; E
+</code></pre><h2 id=序列图>序列图</h2><pre tabindex=0><code class=language-mermaid data-lang=mermaid>sequenceDiagram
+    participant 用户
+    participant 系统
+    participant 数据库
+
+    用户-&gt;&gt;系统：请求数据
+    系统-&gt;&gt;数据库：查询
+    数据库--&gt;&gt;系统：返回数据
+    系统--&gt;&gt;用户：显示结果
+</code></pre><h2 id=甘特图>甘特图</h2><pre tabindex=0><code class=language-mermaid data-lang=mermaid>gantt
+    title 项目计划
+    dateFormat  YYYY-MM-DD
+    section 阶段 1
+    需求分析 :a1, 2024-01-01, 14d
+    section 阶段 2
+    设计 :after a1, 10d
+    开发 :20d
+    section 阶段 3
+    测试 :15d
+</code></pre><h2 id=类图>类图</h2><pre tabindex=0><code class=language-mermaid data-lang=mermaid>classDiagram
+    class Animal {
+        +String name
+        +eat()
+    }
+    class Dog {
+        +bark()
+    }
+    class Cat {
+        +meow()
+    }
+    Animal &lt;|-- Dog
+    Animal &lt;|-- Cat
+</code></pre></div><footer id=article-footer><time id=article-last-updated datetime=0001-01-01><i class="icon icon-calendar"></i>&nbsp;Last updated: 0001-01-01</time></footer></article><aside id=toc><span class=btn-close><i class="icon icon-close"></i></span><div class=sticky><strong><i class="icon icon-toc"></i> On this page</strong><nav id=TableOfContents><ul><li><a href=#流程图>流程图</a></li><li><a href=#序列图>序列图</a></li><li><a href=#甘特图>甘特图</a></li><li><a href=#类图>类图</a></li></ul></nav></div></aside></main></div><footer id=site-footer><div id=site-footer-copyright><a href=https://github.com/kyeo-hub target=_blank><i class="icon icon-copyright"></i> 2024-2026 kyeo</a></div><div id=site-footer-social><a href=https://github.com/kyeo-hub target=_blank aria-label="github url"><i class="icon icon-github icon-colored"></i></a></div><div id=site-footer-fund></div><div id=site-footer-love>Made with <i class="icon icon-love icon-colored"></i> &nbsp;from&nbsp;<a href=https://docura.github.io/ target=_blank>Docura</a></div></footer><script type=text/javascript src=/js/base.min.js></script><script type=application/javascript>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js?2026-03-20").catch(function(e){console.error("ServiceWorker registration failed: ",e)})</script></body></html>

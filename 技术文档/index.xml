@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术文档 on 我的知识库</title><link>/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/</link><description>Recent content in 技术文档 on 我的知识库</description><generator>Hugo</generator><language>zh-cn</language><atom:link href="/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml"/><item><title>Mermaid 图表</title><link>/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/mermaid-%E5%9B%BE%E8%A1%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/mermaid-%E5%9B%BE%E8%A1%A8/</guid><description>&lt;h1 id="mermaid-图表"&gt;Mermaid 图表&lt;/h1&gt;
+&lt;p&gt;Docura 主题支持 Mermaid 图表语法。&lt;/p&gt;
+&lt;h2 id="流程图"&gt;流程图&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;graph TD
+ A[开始] --&amp;gt; B{条件}
+ B --&amp;gt;|是 | C[执行 A]
+ B --&amp;gt;|否 | D[执行 B]
+ C --&amp;gt; E[结束]
+ D --&amp;gt; E
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="序列图"&gt;序列图&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;sequenceDiagram
+ participant 用户
+ participant 系统
+ participant 数据库
+
+ 用户-&amp;gt;&amp;gt;系统：请求数据
+ 系统-&amp;gt;&amp;gt;数据库：查询
+ 数据库--&amp;gt;&amp;gt;系统：返回数据
+ 系统--&amp;gt;&amp;gt;用户：显示结果
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="甘特图"&gt;甘特图&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;gantt
+ title 项目计划
+ dateFormat YYYY-MM-DD
+ section 阶段 1
+ 需求分析 :a1, 2024-01-01, 14d
+ section 阶段 2
+ 设计 :after a1, 10d
+ 开发 :20d
+ section 阶段 3
+ 测试 :15d
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="类图"&gt;类图&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;classDiagram
+ class Animal {
+ +String name
+ +eat()
+ }
+ class Dog {
+ +bark()
+ }
+ class Cat {
+ +meow()
+ }
+ Animal &amp;lt;|-- Dog
+ Animal &amp;lt;|-- Cat
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
