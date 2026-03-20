@@ -5,7 +5,7 @@ theme = 'relearn'
 
 [params]
   description = "个人知识库"
-  editURL = "https://github.com/kyeo-hub/my_wiki/edit/main/content"
+  editURL = "https://github.com/kyeo-hub/my_wiki/edit/main/content/"
   disableBreadcrumb = false
   disableNextPrev = false
   disableSearch = false
